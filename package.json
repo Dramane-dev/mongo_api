@@ -1,0 +1,35 @@
+{
+  "name": "mongo_api",
+  "version": "1.0.0",
+  "description": "création d'une API with mongo permettant permettant la gestion d'une vidéothèque. :) ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dramane-dev/mongo-api.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express",
+    "mongoDb"
+  ],
+  "author": "Dramane-dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dramane-dev/mongo-api/issues"
+  },
+  "homepage": "https://github.com/Dramane-dev/mongo-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.10",
+    "nodemon": "^2.0.6",
+    "npm": "^6.14.8"
+  }
+}

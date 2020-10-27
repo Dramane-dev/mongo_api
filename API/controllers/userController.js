@@ -1,5 +1,5 @@
 const User = require('../models/users');
-const { success, error } = require('../node_modules/functions');
+const { success, error } = require('../functions');
 // Controllers
 module.exports = {
 
@@ -26,11 +26,11 @@ module.exports = {
             res.status(400).send(error({ 
                 message: 'This value cannot be empty'
             }));
-        
+
         const user = new User({
             name: body.name,
             age: body.age,
-            movie: body.movie
+            movies: req.query.movies
         });
 
         //Save my user 

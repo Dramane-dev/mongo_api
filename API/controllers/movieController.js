@@ -1,5 +1,5 @@
 const Movie = require('../models/movies');
-const { success, error } = require('../node_modules/functions');
+const { success, error } = require('../functions');
 // Controllers
 module.exports = {
 

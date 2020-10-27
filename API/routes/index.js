@@ -1,17 +1,18 @@
-const movieController = require('../controllers/movieController');
-const userController = require('../controllers/userController');
-
 // MES ROUTES 
 UserController = require('../controllers/userController');
 MovieController = require('../controllers/movieController');
+DataController = require('../controllers/dataController');
 
 module.exports = (server) => {
 
     // HomePage
-    server.get('/', (req, res) => {
+/*     server.get('/', (req, res) => {
         console.log('Hello welcom to my Mongo API 😊 !');
         res.send({ result: 'Hello welcom to my Mongo API 😊 !'});
-    });
+    }); */
+    // Generate fakeData 
+    server.post('/', DataController.createFakeDataUser);
+    server.post('/', DataController.createFakeDataMovie);
   
     // Routes for userController
     server.get('/users', UserController.findAll);

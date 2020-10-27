@@ -7,8 +7,8 @@ const UserSchema = new Schema({
     name: String,
     age: Number,
     movies: [{
-        type: Schema.Types.ObjectId,
-        ref: 'movie'
+        type: String,
+        ref: String
     }]
 });
 

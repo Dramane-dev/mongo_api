@@ -25,9 +25,9 @@ class DisplayUsers extends React.Component  {
                 <h1>All users : </h1>
                 { this.state.users.map((user, index) => (
                     <article key={index}>
-                        <p>Name : {user.name}</p>
-                        <p>Age : {user.age}</p>
-                        <p>Favorite Movies : {user.movie}</p>
+                        <p><strong>Name :</strong> {user.name}</p>
+                        <p><strong>Age :</strong> {user.age}</p>
+                        <p><strong>Favorite Movies :</strong> {user.movies}</p>
                     </article>
                 ))}
             </div>

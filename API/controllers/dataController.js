@@ -2,7 +2,7 @@ const User = require('../models/users');
 const Movie = require('../models/movies');
 const faker = require('faker');
 const { success } = require('../functions');
-//const { success } = require('../functions');
+
 
 module.exports = {
     async createFakeDataUser(req, res) {
@@ -54,7 +54,7 @@ module.exports = {
         catch (error) {
             console.log('*** 2 ***')
             res.status(500)
-            res.send({error: true}) 
+            res.send({error: true})
             //next(error);
         }
     }

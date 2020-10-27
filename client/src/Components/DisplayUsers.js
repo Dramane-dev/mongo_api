@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import axios from 'axios';
 
-class TestApiMongo extends React.Component  {
+class DisplayUsers extends React.Component  {
     constructor(props) {
         super(props)
 
@@ -20,8 +20,9 @@ class TestApiMongo extends React.Component  {
     }
     render() {
         return (
+            <>
             <div className="usersList">
-                <h1>List Of Users : </h1>
+                <h1>All users : </h1>
                 { this.state.users.map((user, index) => (
                     <article key={index}>
                         <p>Name : {user.name}</p>
@@ -30,9 +31,10 @@ class TestApiMongo extends React.Component  {
                     </article>
                 ))}
             </div>
+            </>
         );
     }
     
 }
 
-export default TestApiMongo
+export default DisplayUsers

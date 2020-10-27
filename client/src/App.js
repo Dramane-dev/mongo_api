@@ -1,15 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
-import TestApiMongo from './TestApiMongo'
+import Navbar from './Components/index'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Users from './pages/users';
+import Movies from './pages/movies';
+import CreateUsers from './pages/createUsers';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <TestApiMongo />
-      </header>
-    </div>
+    <>
+    <Router>
+      <Navbar />
+        <Switch>
+          <Route path='/users' component={Users} />
+          <Route path='/movies' component={Movies} />
+          <Route path='/createUsers' component={CreateUsers} />
+        </Switch>
+    </Router>
+      <h1>Welcom to my MONGO API</h1>
+    </>
   );
 }
 
